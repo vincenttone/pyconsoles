@@ -1,0 +1,16 @@
+!!!5
+%html
+  %head
+    %title play python
+    %link{:rel=>'stylesheet', :type=>"text/css", :href=>"/stylesheets/home.css?version=#{settings.assets_version}"}
+    %script{:type=>"text/javascript", :src=>"/javascripts/jquery.js?version=#{settings.assets_version}"}
+    %script{:type=>"text/javascript", :src=>"/javascripts/skulpt.js?version=#{settings.assets_version}"}
+    %script{:type=>"text/javascript", :src=>"/javascripts/builtin.js?version=#{settings.assets_version}"}
+    %script{:type=>"text/javascript", :src=>"/javascripts/preprocess.js?version=#{settings.assets_version}"}
+    %script{:type=>"text/javascript", :src=>"/javascripts/home.js?version=#{settings.assets_version}"}
+  %body
+    .home
+      .coding
+        #codebase
+          %pre#result
+          %pre#code{:contentEditable=>'true', 'designMode'=>'on'}
